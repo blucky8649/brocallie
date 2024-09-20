@@ -27,7 +27,7 @@ datetime = "0.6.0"
 serialization-json = "1.7.1"
 
 room = "2.7.0-alpha05"
-ksp = "2.0.0-1.0.24"
+ksp = "2.0.20-1.0.25"
 peekaboo = "0.5.2"
 koin = "4.0.0-RC1"
 
