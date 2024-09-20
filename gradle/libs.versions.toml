@@ -23,7 +23,7 @@ kmpViewModel = "2.8.0"
 jetbrainsKotlinJvm = "2.0.0"
 navigation = "2.8.0-beta05"
 coil = "3.0.0-alpha08"
-datetime = "0.6.0"
+datetime = "0.6.1"
 serialization-json = "1.7.1"
 
 room = "2.7.0-alpha05"
