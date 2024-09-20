@@ -22,7 +22,7 @@ buildKonfig = "0.15.1"
 kmpViewModel = "2.8.0"
 jetbrainsKotlinJvm = "2.0.0"
 navigation = "2.8.0-beta05"
-coil = "3.0.0-alpha08"
+coil = "3.0.0-alpha10"
 datetime = "0.6.0"
 serialization-json = "1.7.1"
 
