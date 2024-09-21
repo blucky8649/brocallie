@@ -29,7 +29,7 @@ serialization-json = "1.7.1"
 room = "2.7.0-alpha05"
 ksp = "2.0.0-1.0.24"
 peekaboo = "0.5.2"
-koin = "4.0.0-RC1"
+koin = "4.0.0"
 
 google-services = "4.4.2"
 composeIcons = "1.1.0"
