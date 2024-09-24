@@ -7,6 +7,5 @@ plugins {
 kotlin {
     sourceSets.commonMain.dependencies {
         implementation(projects.shared.core.room)
-        implementation(projects.shared.core.ui)
     }
 }

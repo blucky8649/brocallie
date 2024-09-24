@@ -7,7 +7,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.compose.KoinApplication
 
 @Composable
-fun BcApp(
+actual fun BcApp(
     content: @Composable () -> Unit
 ) {
     val context = LocalContext.current

@@ -21,6 +21,8 @@ internal fun Project.configureComposeMultiplatform() {
                 implementation(uiToolingPreview)
                 val uiTooling = libs.findLibrary("compose-ui-tooling").get()
                 implementation(uiTooling)
+                val decomposeNavhost = libs.findLibrary("decompose-navhost").get()
+                implementation(decomposeNavhost)
             }
 
             commonMain.dependencies {
@@ -45,10 +47,10 @@ internal fun Project.configureComposeMultiplatform() {
                 implementation(coilComposeCore)
                 val tablerIcon = libs.findLibrary("composeIcons-tablerIcons").get()
                 implementation(tablerIcon)
-                val decomposeCore = libs.findLibrary("decompose-core").get()
-                implementation(decomposeCore)
-                val decomposeCompose = libs.findLibrary("decompose-compose").get()
-                implementation(decomposeCompose)
+                val decomposeNavhost = libs.findLibrary("decompose-navhost").get()
+                implementation(decomposeNavhost)
+                val urlEncoder = libs.findLibrary("urlEncoder").get()
+                implementation(urlEncoder)
             }
 
             iosMain.dependencies {

@@ -6,5 +6,8 @@ plugins {
 kotlin {
     sourceSets.commonMain.dependencies {
         implementation(projects.shared.core.room)
+        api(projects.shared.feature.contacts)
+        api(projects.shared.feature.conversation)
+        api(projects.shared.feature.createcallie)
     }
 }

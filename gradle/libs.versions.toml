@@ -37,6 +37,9 @@ androidxComposeBom = "2024.06.00"
 sqliteBundled = "2.5.0-alpha05"
 
 decompose = "3.0.0"
+decompose-navhost = "1.0.0-alpha04"
+
+urlEncoder = "1.5.0"
 
 [libraries]
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
@@ -83,6 +86,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 decompose-core = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose" }
 decompose-compose = { module = "com.arkivanov.decompose:extensions-compose", version.ref = "decompose" }
 
+decompose-navhost = { module = "io.github.blucky8649:decompose-navhost", version.ref = "decompose-navhost"}
+
 
 coil-core = { module = "io.coil-kt.coil3:coil", version.ref = "coil" }
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
@@ -96,6 +101,8 @@ koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin"}
 koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin"}
 
 generativeAi = { module = "dev.shreyaspatil.generativeai:generativeai-google", version.ref = "generative-ai" }
+
+urlEncoder = { module = "net.thauvin.erik.urlencoder:urlencoder-lib", version.ref = "urlEncoder"}
 
 composeIcons-tablerIcons = { module = "br.com.devsrsouza.compose.icons:tabler-icons", version.ref = "composeIcons" }
 peekaboo-ui = { module = "io.github.onseok:peekaboo-ui", version.ref = "peekaboo" }

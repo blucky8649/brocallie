@@ -5,13 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.blucky8649.brocallie.android.ui.BroCallieApp
+import com.arkivanov.decompose.defaultComponentContext
+import com.blucky8649.ui.App
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            BroCallieApp()
+            App(defaultComponentContext())
         }
     }
 }
@@ -19,5 +20,5 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview(showSystemUi = true)
 fun BroCallieAppPreview() {
-    BroCallieApp()
+    App()
 }

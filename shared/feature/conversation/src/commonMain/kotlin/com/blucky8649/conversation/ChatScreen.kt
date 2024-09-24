@@ -66,7 +66,7 @@ fun ChatScreen(
     modifier: Modifier = Modifier,
 ) {
     val dbInject = koinInject<BrocallieDatabase>()
-    val viewModel: ChatViewModel = viewModel { ChatViewModel(dbInject, callie) }
+    val viewModel: ChatViewModel = viewModel(key = callie.id.toString()) { ChatViewModel(dbInject, callie) }
     val scrollState = rememberLazyListState()
     val topBarState = rememberTopAppBarState()
     val snackbarHostState = remember { SnackbarHostState() }

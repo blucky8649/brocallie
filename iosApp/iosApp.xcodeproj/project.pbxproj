@@ -10,15 +10,11 @@
 		0155B9612C455E590090576A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0155B9602C455E590090576A /* InfoPlist.xcstrings */; };
 		018375E02C611537005DCBBF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 018375DF2C611537005DCBBF /* FirebaseStorage */; };
 		018375E22C611537005DCBBF /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 018375E12C611537005DCBBF /* FirebaseStorageCombine-Community */; };
-		018375E52C611A03005DCBBF /* CreateCallieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018375E42C611A03005DCBBF /* CreateCallieScreen.swift */; };
 		01FFB17A2C612C9C00E86542 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01FFB1792C612C9C00E86542 /* GoogleService-Info.plist */; };
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
-		94E084ABA23C55174B082E99 /* ContactScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E085DE71F23A756CAE804B /* ContactScreen.swift */; };
-		94E0896F15ED1A6799350E17 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0863FEB2A231A4ACD7A5A /* ChatScreen.swift */; };
-		94E08CDA24714A01FF1527F8 /* ContactDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0809CB3F14829F7168C41 /* ContactDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		0155B9602C455E590090576A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		018375E42C611A03005DCBBF /* CreateCallieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCallieScreen.swift; sourceTree = "<group>"; };
 		01FFB1792C612C9C00E86542 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "iosApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,9 +39,6 @@
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94E0809CB3F14829F7168C41 /* ContactDetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailScreen.swift; sourceTree = "<group>"; };
-		94E085DE71F23A756CAE804B /* ContactScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactScreen.swift; sourceTree = "<group>"; };
-		94E0863FEB2A231A4ACD7A5A /* ChatScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		018375E32C6119F2005DCBBF /* createcallie */ = {
-			isa = PBXGroup;
-			children = (
-				018375E42C611A03005DCBBF /* CreateCallieScreen.swift */,
-			);
-			path = createcallie;
-			sourceTree = "<group>";
-		};
 		058557D7273AAEEB004C7B11 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +89,6 @@
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
-				94E08C7260F651DE6E2AB3B6 /* ui */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -115,25 +98,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		94E0845AC18DF9892E403F7C /* contact */ = {
-			isa = PBXGroup;
-			children = (
-				94E085DE71F23A756CAE804B /* ContactScreen.swift */,
-				94E0809CB3F14829F7168C41 /* ContactDetailScreen.swift */,
-				94E0863FEB2A231A4ACD7A5A /* ChatScreen.swift */,
-			);
-			path = contact;
-			sourceTree = "<group>";
-		};
-		94E08C7260F651DE6E2AB3B6 /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				018375E32C6119F2005DCBBF /* createcallie */,
-				94E0845AC18DF9892E403F7C /* contact */,
-			);
-			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +204,6 @@
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
-				94E084ABA23C55174B082E99 /* ContactScreen.swift in Sources */,
-				94E08CDA24714A01FF1527F8 /* ContactDetailScreen.swift in Sources */,
-				94E0896F15ED1A6799350E17 /* ChatScreen.swift in Sources */,
-				018375E52C611A03005DCBBF /* CreateCallieScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
