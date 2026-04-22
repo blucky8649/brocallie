@@ -1,6 +1,5 @@
 package com.blucky8649.createcallie
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -31,7 +30,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -54,10 +52,6 @@ import com.blucky8649.designsystem.BcTopAppBar
 import com.blucky8649.room.BrocallieDatabase
 import compose.icons.TablerIcons
 import compose.icons.tablericons.Check
-import io.github.vinceglb.filekit.compose.rememberFilePickerLauncher
-import io.github.vinceglb.filekit.core.PickerMode
-import io.github.vinceglb.filekit.core.PickerType
-import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -116,17 +110,7 @@ fun CreateCallieScreen(
     ) { paddingValues: PaddingValues ->
         val uiState by viewModel.uiState.collectAsState()
         var showErrorDialog by remember { mutableStateOf(false) }
-        val scope = rememberCoroutineScope()
-        val picker = rememberFilePickerLauncher(
-            type = PickerType.Image,
-            title = "Pick a image",
-            mode = PickerMode.Single
-        ) { file ->
-            scope.launch {
-                val byteArray = file?.readBytes() ?: return@launch
-                viewModel.setImage(byteArray)
-            }
-        }
+        val launchPhotoPicker = rememberImagePickerLauncher(viewModel::setImage)
 
         LaunchedEffect(uiState.errorMessage) {
             showErrorDialog = uiState.errorMessage != null
@@ -161,7 +145,7 @@ fun CreateCallieScreen(
                 .size(300.dp)
                 .then(alignCenter)
                 .clip(CircleShape)
-                .clickable { picker.launch() }
+                .clickable { launchPhotoPicker() }
 
             Column(
                 modifier = circleModifier
@@ -198,6 +182,11 @@ fun CreateCallieScreen(
         }
     }
 }
+
+@Composable
+expect fun rememberImagePickerLauncher(
+    onImagePicked: (ByteArray) -> Unit
+): () -> Unit
 
 @Composable
 @Preview

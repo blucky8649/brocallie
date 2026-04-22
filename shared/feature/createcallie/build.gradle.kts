@@ -19,11 +19,15 @@ buildkonfig {
 }
 
 kotlin {
-    sourceSets.commonMain.dependencies {
-        implementation(libs.filekit.compose)
-        implementation(libs.kotlinx.serialization.json)
-        implementation(projects.shared.core.firebase)
-        implementation(projects.shared.core.generativeAi)
-        implementation(projects.shared.core.room)
+    sourceSets {
+        commonMain.dependencies {
+            implementation(libs.kotlinx.serialization.json)
+            implementation(projects.shared.core.firebase)
+            implementation(projects.shared.core.generativeAi)
+            implementation(projects.shared.core.room)
+        }
+        androidMain.dependencies {
+            implementation(libs.androidx.activity.compose)
+        }
     }
 }
