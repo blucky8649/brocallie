@@ -1,7 +1,7 @@
 [versions]
 ## KMP setting
-versionName = "1.2.0"
-versionCode = "5"
+versionName = "1.2.2"
+versionCode = "6"
 
 ## Lib Dependencies
 accompanistSystemuicontroller = "0.28.0"
