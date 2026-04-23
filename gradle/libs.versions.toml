@@ -40,7 +40,7 @@ materialKolor = "2.0.0"
 google-services = "4.4.2"
 composeIcons = "1.1.1"
 androidxComposeBom = "2024.12.01"
-sqliteBundled = "2.5.0-alpha05"
+sqliteBundled = "2.5.0-beta01"
 
 eungabi = "0.4.1"
 urlencoder = "1.6.0"
