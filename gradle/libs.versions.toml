@@ -32,7 +32,7 @@ coil = "3.0.4"
 datetime = "0.6.1"
 serialization-json = "1.7.3"
 
-room = "2.7.0-alpha05"
+room = "2.7.0-beta01"
 ksp = "2.1.0-1.0.29"
 peekaboo = "0.5.2"
 koin = "4.0.1"
