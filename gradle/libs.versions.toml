@@ -6,7 +6,7 @@ versionCode = "8"
 ## Lib Dependencies
 accompanistSystemuicontroller = "0.28.0"
 agp = "8.7.3"
-androidTools = "31.7.3"
+androidTools = "31.8.1"
 firebaseBom = "33.1.2"
 googleCloudTexttospeech = "2.0.1"
 kotlin = "2.1.0"
